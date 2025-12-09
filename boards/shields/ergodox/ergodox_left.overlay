@@ -1,6 +1,8 @@
 #include "ergodox.dtsi"
 
 &kscan0 {
+    label = "kscan_left";   // must match 'chosen' in base dtsi
+    compatible = "zmk,kscan-gpio-interrupt-matrix";
     col-gpios
         = <&pro_micro 19 GPIO_ACTIVE_HIGH>
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>

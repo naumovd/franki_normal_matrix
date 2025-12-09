@@ -4,6 +4,8 @@
 };
 
 &kscan0 {
+    label = "kscan_right";   // separate label for right half
+    compatible = "zmk,kscan-gpio-interrupt-matrix";
     col-gpios
         = <&pro_micro 4 GPIO_ACTIVE_HIGH>
         , <&pro_micro 5 GPIO_ACTIVE_HIGH>
