@@ -1,0 +1,12 @@
+file_format: "1"
+id: Ergodox_w
+name: Franki
+type: shield
+url: https://github.com/naumovd/franki_normal_matrix
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - ergodox_left
+  - ergodox_right
