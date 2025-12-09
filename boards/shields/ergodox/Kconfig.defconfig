@@ -13,7 +13,4 @@ if SHIELD_ERGODOX_LEFT || SHIELD_ERGODOX_RIGHT
 config ZMK_SPLIT
     default y
 
-config ZMK_PHYSICAL_LAYOUT
-    default n
-
 endif
