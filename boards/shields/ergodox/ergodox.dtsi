@@ -24,16 +24,17 @@
 };
 
 / {
-    gpio_keys: gpio_keys {
+    gpio_keys {
         compatible = "gpio-keys";
 
-        unused_int_pin: unused_int_pin {
-            label = "Unused Interrupt Pin";
-            gpios = 
-                  <&pro_micro 3 (GPIO_PULL_DOWN | GPIO_INPUT)>
-                , <&pro_micro 20 (GPIO_PULL_DOWN | GPIO_INPUT)>
-                ;
-            
+        unused_pin_3: unused_pin_3 {
+            label = "Unused Pin 3 Pull-Down";
+            gpios = <&pro_micro 3 (GPIO_PULL_DOWN | GPIO_INPUT)>;
+        };
+
+        unused_pin_20: unused_pin_20 {
+            label = "Unused Pin 20 Pull-Down";
+            gpios = <&pro_micro 20 (GPIO_PULL_DOWN | GPIO_INPUT)>;
         };
     };
 };
