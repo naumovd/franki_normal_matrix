@@ -24,23 +24,6 @@
 };
 
 / {
-    gpio_keys {
-        compatible = "gpio-keys";
-
-        unused_pin_3: unused_pin_3 {
-            label = "Unused Pin 3 Pull-Down";
-            gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        };
-
-        unused_pin_20: unused_pin_20 {
-            label = "Unused Pin 20 Pull-Down";
-            
-            gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        };
-    };
-};
-
-/ {
     physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
